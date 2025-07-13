@@ -1,4 +1,4 @@
-nums = [1,0,1,2]
+nums = [0,1,2,1,0,2]
 
 l = 0 
 r = len(nums)-1 
@@ -14,6 +14,7 @@ while i <= r:
     elif nums[i] == 2: 
         nums[i], nums[r] = nums[r], nums[i]  #swap
         r -= 1  
+
     else: 
         i += 1
 
