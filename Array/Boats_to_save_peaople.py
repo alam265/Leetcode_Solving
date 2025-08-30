@@ -19,3 +19,13 @@ while l <= r:
         c+=1
 
 print(c)
+
+
+"""Intuition        
+
+Heavy + light wight pick korbo if <=limit. Else heavy tare nibo then 
+ r-=1 kore dibo 
+ again heavy + lighter check.
+
+
+"""
