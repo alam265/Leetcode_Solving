@@ -10,15 +10,15 @@ class Solution:
             dic1[ch] = 1 + dic1.get(ch, 0)
 
         l = 0
-        curr = s2[l] 
+       
         for r in range(len(s2)): 
             if (r - l + 1) > len(s1): 
-                if dic2[curr] > 0:
-                    dic2[curr] -= 1 
-                    if dic2[curr] == 0:
-                        dic2.pop(curr)
+                if dic2[s2[l]] > 0:
+                    dic2[s2[l]] -= 1 
+                    if dic2[s2[l]] == 0:
+                        dic2.pop(s2[l])
                 l+=1
-                curr = s2[l]
+
 
             dic2[s2[r]] = 1 + dic2.get(s2[r], 0)
             
