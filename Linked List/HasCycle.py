@@ -1,5 +1,5 @@
 class Solution:
-    def hasCycle(self, head: Optional[ListNode]) -> bool:
+    def hasCycle(self, head: Optional[ListNode]) -> bool: # type: ignore
         p1 = head 
         p2 = head 
 
