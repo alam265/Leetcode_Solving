@@ -18,7 +18,7 @@ class Solution:
             carry = val // 10 
             val = val % 10 
 
-            curr.next = ListNode(val, None)  
+            curr.next = ListNode(val, None)   # type: ignore
 
             l1 = l1.next if l1 else None 
             l2 = l2.next if l2 else None 
