@@ -6,7 +6,7 @@
 #         self.right = right
 
 class Solution:
-    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int: # type: ignore
         cnt = 0
         res = -1 
 
